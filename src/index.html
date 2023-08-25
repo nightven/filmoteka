@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Filmoteka</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+  <body class="bg-info bg-gradient" style="--bs-bg-opacity: 0.5">
+    <header class="bg-white mb-5 p-2">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder=" "
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          Search
+        </button>
+      </div>
+      <button type="button" class="btn btn-outline-warning">check in</button>
+      <button type="button" class="btn btn-outline-warning">check out</button>
+      <button type="button" class="btn btn-outline-warning">favorite</button>
+    </header>
+
+    <div class="container text-center">
+      <div class="row js-container"></div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
