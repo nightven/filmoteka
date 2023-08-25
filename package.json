@@ -1,19 +1,31 @@
 {
-  "name": "filmoteka",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "parcel-project-template",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://nightven.github.io/filmoteka",
   "scripts": {
-    "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /filmoteka/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
-    "sass": "^1.66.1",
-    "vite": "^4.4.5",
-    "vite-plugin-inspect": "^0.7.38"
-  }
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
