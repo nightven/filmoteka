@@ -1,5 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Імпорт скриптів Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import { getMovies } from './js/films-api';
 import { createMarkup } from './js/markup';
+
 const refs = {
   containerEl: document.querySelector('.js-container'),
 };

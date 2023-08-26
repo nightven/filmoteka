@@ -8,9 +8,9 @@ function createMarkup(arr) {
     <img src="https://image.tmdb.org/t/p/w300${poster_path}" class="card-img-top" alt="${title}">
     <div class="card-body ">
       <h5 class="card-title">${title}</h5>
-      <p class="card-text">${release_date}</p>
+      <span>Rating:${vote_average}</span>
+      <p class="card-text">Releases date:${release_date}</p>
       <button type="button" class="btn btn-outline-warning">Add to favorite</button>
-      <span>rating;${vote_average}</span>
     </div>
   </div>
     </div>
