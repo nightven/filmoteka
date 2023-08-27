@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    
+</head>
+
+<body class="bg-info bg-gradient" style="--bs-bg-opacity: 0.5">
+    <header class="bg-white mb-5 p-2">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder=" " aria-label="Recipient's username"
+                aria-describedby="button-addon2" />
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                Search
+            </button>
+        </div>
+        <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#registerModal">
+            check in
+        </button>
+
+        <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal">check
+            out</button>
+        <a href="index.html" class="btn btn-outline-warning ">Back</a>
+    </header>
+
+    <div class="container text-center">
+        <div class="row js-container-favorite"></div>
+    </div>
+   
+    <!-- <include src="./partials/modals/modals.html"></include> -->
+    <script src="../node_modules/bootstrap/js/index.esm.js" type="module"> </script>
+    <script type="module" src="./favorite.js"></script>
+
+</body>
+
+</html>
